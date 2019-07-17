@@ -2,16 +2,13 @@
 <search>
   <entry>
     <title><![CDATA[我的第一篇文章]]></title>
-    <url>%2F2019%2F07%2F17%2FFibonacci%E6%95%B0%E5%88%97%2F</url>
-    <content type="text"><![CDATA[Fibonacci数列定义： Fibonacci数列的递推公式为：F(n)=F(n-1)+F(n-2)，其中F1=F2=1。 代码实现～C:求第n个数–&gt;时间复杂度O(n)算法123456789101112131415161718192021#include&lt;stdio.h&gt; int main() &#123; int a1,a2; a1=a2=1; int temp; //temp作为数据交换的中介 long n; //因为n&gt;=1 and n&lt;=1000000 long i; scanf("%ld",&amp;n); for(i=1;i&lt;n;i++) &#123; //a1 作为f(n);a2为f(n+1) //a1+a2=f(n+2) temp=a2; a2=a1+a2; a1=temp; &#125; printf("%d\n",a1); return 0; &#125; ::此种方法是将temp一个指针，指示当前位置，不断向后移，需注意循环次数！:: 求第n个数 - 时间复杂度O(nlogn)算法(递归)1234567891011121314151617#include&lt;stdio.h&gt; int Fibo(int n) &#123; if(n==1||n==2) return 1; else return Fibo(n-1)+Fibo(n-2); &#125; int main() &#123; int n=0; scanf("%d",&amp;n); printf("%d\n",Fibo(n)); return 0; &#125; ::重点掌握！！:: 求Fn除以10007的余数1234567891011121314#include&lt;stdio.h&gt;int F[1000002];int main()&#123; int n,i; scanf("%d",&amp;n); F[1]=1;F[2]=1; for(i=3;i&lt;=n;i++) &#123; F[i]=(F[i-1]+F[i-2])%10007; &#125; printf("%d\n",F[n]); return 0;&#125;//此题为蓝桥杯测试题 ::通过这道题，发现一个有规律的数列，它关于某个数的余数也可能存在相同的规律，做题时要注意！:: #编程知识/CPP]]></content>
-      <tags>
-        <tag>编程</tag>
-      </tags>
+    <url>%2F2019%2F07%2F17%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%2F</url>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[我的第一篇文章]]></title>
-    <url>%2F2019%2F07%2F17%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%2F</url>
-    <content type="text"></content>
+    <url>%2F2019%2F07%2F17%2FFibonacci%E6%95%B0%E5%88%97%2F</url>
+    <content type="text"><![CDATA[Fibonacci数列定义： Fibonacci数列的递推公式为：F(n)=F(n-1)+F(n-2)，其中F1=F2=1。 代码实现～C:求第n个数–&gt;时间复杂度O(n)算法123456789101112131415161718192021#include&lt;stdio.h&gt; int main() &#123; int a1,a2; a1=a2=1; int temp; //temp作为数据交换的中介 long n; //因为n&gt;=1 and n&lt;=1000000 long i; scanf("%ld",&amp;n); for(i=1;i&lt;n;i++) &#123; //a1 作为f(n);a2为f(n+1) //a1+a2=f(n+2) temp=a2; a2=a1+a2; a1=temp; &#125; printf("%d\n",a1); return 0; &#125; ::此种方法是将temp一个指针，指示当前位置，不断向后移，需注意循环次数！:: 求第n个数 - 时间复杂度O(nlogn)算法(递归)1234567891011121314151617#include&lt;stdio.h&gt; int Fibo(int n) &#123; if(n==1||n==2) return 1; else return Fibo(n-1)+Fibo(n-2); &#125; int main() &#123; int n=0; scanf("%d",&amp;n); printf("%d\n",Fibo(n)); return 0; &#125; ::重点掌握！！:: 求Fn除以10007的余数1234567891011121314#include&lt;stdio.h&gt;int F[1000002];int main()&#123; int n,i; scanf("%d",&amp;n); F[1]=1;F[2]=1; for(i=3;i&lt;=n;i++) &#123; F[i]=(F[i-1]+F[i-2])%10007; &#125; printf("%d\n",F[n]); return 0;&#125;//此题为蓝桥杯测试题 ::通过这道题，发现一个有规律的数列，它关于某个数的余数也可能存在相同的规律，做题时要注意！:: #编程知识/CPP]]></content>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>

@@ -93,16 +93,20 @@
   };
 </script>
 
-  <meta name="description" content="儒雅随和">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZW&#39;s Blog">
-<meta property="og:url" content="https://www.imlzw.top/index.html">
+  <meta name="description" content="前言如今市面上的博客平台比比皆是，如CSDN，博客园，简书，掘金等，但是其操作空间十分有限，还有密密麻麻的广告影响心情，就这样萌生了自建博客的想法。 有以下方式实现：  购买阿里云服务器优点：它有自带的WordPress镜像，对小白十分友好，有学生认证每个月9.9元(云翼计划)，经济实惠。缺点：只能选择国内服务器，备案十分麻烦。 运用Hexo托管到github，coding(已并入腾讯云)等平台优">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo Blog建站踩坑实录">
+<meta property="og:url" content="https://www.imlzw.top/2019/07/19/Hexo-Blog建站踩坑实录/index.html">
 <meta property="og:site_name" content="ZW&#39;s Blog">
-<meta property="og:description" content="儒雅随和">
+<meta property="og:description" content="前言如今市面上的博客平台比比皆是，如CSDN，博客园，简书，掘金等，但是其操作空间十分有限，还有密密麻麻的广告影响心情，就这样萌生了自建博客的想法。 有以下方式实现：  购买阿里云服务器优点：它有自带的WordPress镜像，对小白十分友好，有学生认证每个月9.9元(云翼计划)，经济实惠。缺点：只能选择国内服务器，备案十分麻烦。 运用Hexo托管到github，coding(已并入腾讯云)等平台优">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://www.imlzw.top/.top//index_jn.png">
+<meta property="og:updated_time" content="2019-07-19T04:50:56.777Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZW&#39;s Blog">
-<meta name="twitter:description" content="儒雅随和">
+<meta name="twitter:title" content="Hexo Blog建站踩坑实录">
+<meta name="twitter:description" content="前言如今市面上的博客平台比比皆是，如CSDN，博客园，简书，掘金等，但是其操作空间十分有限，还有密密麻麻的广告影响心情，就这样萌生了自建博客的想法。 有以下方式实现：  购买阿里云服务器优点：它有自带的WordPress镜像，对小白十分友好，有学生认证每个月9.9元(云翼计划)，经济实惠。缺点：只能选择国内服务器，备案十分麻烦。 运用Hexo托管到github，coding(已并入腾讯云)等平台优">
+<meta name="twitter:image" content="https://www.imlzw.top/.top//index_jn.png">
 
 
 
@@ -110,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="https://www.imlzw.top/">
+  <link rel="canonical" href="https://www.imlzw.top/2019/07/19/Hexo-Blog建站踩坑实录/">
 
 
 
@@ -121,7 +125,7 @@
 </script>
 
   
-  <title>ZW's Blog</title>
+  <title>Hexo Blog建站踩坑实录 | ZW's Blog</title>
   
 
 
@@ -179,8 +183,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -218,7 +221,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -361,9 +364,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -395,10 +398,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/19/Hexo-Blog建站踩坑实录/" class="post-title-link" itemprop="url">Hexo Blog建站踩坑实录</a>
+          <h1 class="post-title" itemprop="name headline">Hexo Blog建站踩坑实录
+
               
             
           </h1>
@@ -471,6 +472,14 @@
           
 
           
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+                 阅读次数： 
+                <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+              </span>
+            </span>
+          
 
           
 
@@ -514,32 +523,55 @@
       
 
       
-        
-          
-            <p>
-              前言如今市面上的博客平台比比皆是，如CSDN，博客园，简书，掘金等，但是其操作空间十分有限，还有密密麻麻的广告影响心情，就这样萌生了自建博客的想法。
-有以下方式实现：
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>如今市面上的博客平台比比皆是，如CSDN，博客园，简书，掘金等，但是其操作空间十分有限，还有密密麻麻的广告影响心情，就这样萌生了自建博客的想法。</p>
+<p>有以下方式实现：</p>
+<ol>
+<li>购买阿里云服务器<br>优点：它有自带的WordPress镜像，对小白十分友好，有学生认证每个月9.9元(云翼计划)，经济实惠。<br>缺点：只能选择国内服务器，备案十分麻烦。</li>
+<li>运用Hexo托管到github，coding(已并入腾讯云)等平台<br>优点：可以安心的来写作，不需要定期维护，不需要备案。<br>缺点：服务器均在海外，国内访问速度慢</li>
+</ol>
+<p>综合考虑，我选择了第二种，于是便有了这篇文章～～</p>
+<h2 id="准备阶段"><a href="#准备阶段" class="headerlink" title="准备阶段"></a>准备阶段</h2><ul>
+<li>购买域名（可选），推荐阿里云，注意域名的首次购买和续费所需金额差距很大，不要一看数小就买，他标得都是第一年的。</li>
+<li>Github账号（Coding可选，用于国内外分流）</li>
+<li>Google账号（注册时从gmail注册，直接注册google好像会卡在最后的电话验证～）</li>
+<li>百度站长平台（用于百度搜索收录，需要有熊掌号，挺麻烦～）<a href="https://ziyuan.baidu.com/dashboard/index" target="_blank" rel="noopener">直达</a></li>
+<li>一颗赤诚之心</li>
+</ul>
+<h2 id="建设阶段"><a href="#建设阶段" class="headerlink" title="建设阶段"></a>建设阶段</h2><p>网上的教程很多，这里推荐几个： <a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">hexo史上最全搭建教程-zjufangzh</a>，<a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">遇见西门的博客</a>，<a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">使用hexo+github搭建免费个人博客详细教程</a>，按照步骤来就可以了～总结下来步骤可分为：</p>
+<ol>
+<li>安装Git</li>
+<li>安装Node.js (Hexo是基于它的)</li>
+<li>安装Hexo</li>
+<li>GitHub创建个人仓库</li>
+<li>将Hexo部署到GitHub</li>
+<li>设置个人域名</li>
+<li>发布</li>
+</ol>
+<h2 id="优化阶段"><a href="#优化阶段" class="headerlink" title="优化阶段"></a>优化阶段</h2><p>首先主题尽量选用的人多的，比如next，碰到问题好解决。这里再推荐一个专门用于优化的教程：<a href="https://io-oi.me/tech/hexo-next-optimization.html" target="_blank" rel="noopener">打造个性超赞博客 Hexo + NexT + GitHub Pages 的超深度优化</a></p>
+<p>在这个阶段会出现不少问题，提几个印象深的：</p>
+<ul>
+<li>选择评论系统时，next有好几个选项可选，我尝试了来必力和valine（需实名认证，时间1天左右），来必力在韩国，在网页上反应有些迟钝，抛开认证的麻烦不谈，valine是很好的选择。推荐教程 <a href="https://blog.csdn.net/blue_zy/article/details/79071414" target="_blank" rel="noopener">为你的Hexo加上评论系统-Valine</a></li>
+<li>网站分析可以用百度分析，功能很强大 <a href="https://tongji.baidu.com/web/welcome/login" target="_blank" rel="noopener">直达</a></li>
+<li>添加百度和谷歌收录要下载两个不同的sitemap，推荐用CNAME和txt验证，直接在阿里云操作，注意类型全选择默认！！不要选谷歌和百度！！</li>
+</ul>
+<h2 id="推荐几个做的很棒的博客"><a href="#推荐几个做的很棒的博客" class="headerlink" title="推荐几个做的很棒的博客"></a>推荐几个做的很棒的博客</h2><ul>
+<li><a href="https://zhangshuqiao.org" target="_blank" rel="noopener">米米的博客</a></li>
+<li><a href="https://io-oi.me/" target="_blank" rel="noopener">reuixiy</a></li>
+<li><a href="https://walesexcitedmei.github.io/" target="_blank" rel="noopener">梅俊逸的博客</a></li>
+<li><a href="http://fangzh.top/" target="_blank" rel="noopener">fangzh</a></li>
+<li><a href="https://bestzuo.cn/" target="_blank" rel="noopener">sanarous</a></li>
+<li><a href="https://blog.pangao.vip/" target="_blank" rel="noopener">潘高的小站</a></li>
+</ul>
+<h2 id="最后的最后"><a href="#最后的最后" class="headerlink" title="最后的最后"></a>最后的最后</h2><p>纪念一下我的博客最初的样子😄：<br><img src="/.top//index_jn.png" alt="hexo博客纪念"></p>
 
-购买阿里云服务器优点：它有自带的WordPress镜像，对小白十分友好，有学生认证每个月9.9元(云翼计划)，经济实惠。缺点：只能选择国内服务器，备案十分麻烦。
-运用Hexo托管到github，coding(已并入腾讯云)等平台优
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/07/19/Hexo-Blog建站踩坑实录/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
       
     </div>
 
     
 
     
+      
+    
 
     
     
@@ -551,208 +583,101 @@
       
     
     
+      <div>
+        <div id="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
 
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.jpeg" alt="ZW Liu 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.jpeg" alt="ZW Liu 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>ZW Liu</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="https://www.imlzw.top/2019/07/19/Hexo-Blog建站踩坑实录/" title="Hexo Blog建站踩坑实录">https://www.imlzw.top/2019/07/19/Hexo-Blog建站踩坑实录/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.imlzw.top/2019/07/17/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ZW Liu">
-      <meta itemprop="description" content="儒雅随和">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZW's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
         
+          
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/17/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
+        <div class="post-tags">
           
+            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
           
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-17 00:58:19" itemprop="dateCreated datePublished" datetime="2019-07-17T00:58:19+08:00">2019-07-17</time>
-            </span>
-          
-
-          
-
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/07/17/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/17/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span title="本文字数">430</span>
-            </span>
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              
-              <span title="阅读时长">1 分钟</span>
-            </span>
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-            <p>
-              Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/07/17/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/17/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
+            
+          </div>
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -762,14 +687,19 @@ Quick
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -789,8 +719,17 @@ Quick
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -911,6 +850,23 @@ Quick
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备阶段"><span class="nav-number">2.</span> <span class="nav-text">准备阶段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建设阶段"><span class="nav-number">3.</span> <span class="nav-text">建设阶段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化阶段"><span class="nav-number">4.</span> <span class="nav-text">优化阶段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#推荐几个做的很棒的博客"><span class="nav-number">5.</span> <span class="nav-text">推荐几个做的很棒的博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后的最后"><span class="nav-number">6.</span> <span class="nav-text">最后的最后</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -1063,6 +1019,10 @@ Quick
 
 
   
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
 
   <script src="/js/next-boot.js?v=7.2.0"></script>
 
@@ -1102,6 +1062,8 @@ Quick
 
 
 
+
+  
 
 
   

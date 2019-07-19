@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.imlzw.top/about/index.html</loc>
+    
+    <lastmod>2019-07-19T10:35:05.450Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.imlzw.top/2019/07/19/Hexo-Blog%E5%BB%BA%E7%AB%99%E8%B8%A9%E5%9D%91%E5%AE%9E%E5%BD%95/</loc>
     
     <lastmod>2019-07-19T10:00:06.506Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://www.imlzw.top/tags/index.html</loc>
     
     <lastmod>2019-07-17T18:19:08.292Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.imlzw.top/about/index.html</loc>
-    
-    <lastmod>2019-07-17T17:57:55.781Z</lastmod>
     
   </url>
   

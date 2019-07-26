@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[计算机组成原理(哈工大)-P1~P3]]></title>
+    <url>%2F2019%2F07%2F26%2F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E5%93%88%E5%B7%A5%E5%A4%A7-P1-P3%2F</url>
+    <content type="text"><![CDATA[P1: 1.1课程简介地位本课程是计算机课程体系中，唯一讲授计算机硬件逻辑实现的课程 名词解释 名称 解释 计算机 机械式计算机，模拟电子计算机，数字电子计算机（当前） 组成（组织） 计算机硬件系统的逻辑实现（用数字电路，数字逻辑知识，以及门电路等数字电子元器件，来实现计算机硬件系统） 原理 一般原理，不依托具体机型 P2：1.1计算机系统简介-a现代计算机的多态性把感应器嵌入和装备到电网、铁路、桥梁、隧道、公路、建筑、供水系统、大坝、油气管道等各种物体中,并且被普遍连接,形成所谓“物联网”,然后将“物联网”与现有的互联网整合起来,实现人类社会与物理系统的整合,形成智慧地球。 HPC解释HPC是高性能计算(High Performance Computing)机群的简称。指能够执行一般个人电脑无法处理的大资料量与高速运算的电脑，其基本组成组件与个人电脑的概念无太大差异，但规格与性能则强大许多。现有的超级计算机运算速度大都可以达到每秒一兆（万亿，非百万）次以上。 计算机软硬件概念 P3：1.1计算机系统简介-b计算机系统层次结构（程序员角度） 计算机组成和计算机体系结构区别]]></content>
+      <categories>
+        <category>读书笔记</category>
+        <category>计算机组成原理(哈工大)</category>
+      </categories>
+      <tags>
+        <tag>计算机组成原理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[《啊哈！算法》第1章]]></title>
     <url>%2F2019%2F07%2F22%2F%E3%80%8A%E5%95%8A%E5%93%88%EF%BC%81%E7%AE%97%E6%B3%95%E3%80%8B%E7%AC%AC1%E7%AB%A0%2F</url>
     <content type="text"><![CDATA[章节构成: 桶排序(伪)例：题目：将一堆数排序，给了范围0～10，设一个数组a[11]，下标表示数，值表示该数出现几次，初始情况如图所示：每个数出现一次，该数组值就 +1。 代码：123456789101112131415161718192021#include&lt;iostream&gt;using namespace std;int main()&#123; int a[11],i,j,t; for(i=0;i&lt;=10;i++)&#123; a[i]=0;//初始化为0 &#125; for(i=0;i&lt;5;i++)&#123;//循环读入5个数 cin&gt;&gt;t; a[t]++; &#125; for(i=0;i&lt;=10;i++)&#123; for(j=1;j&lt;=a[i];j++)&#123; cout&lt;&lt;i&lt;&lt;" "; //出现几次，打印机次！！ &#125; &#125; return 0;&#125; 这种排序方法是一种简化的桶排序，真正的桶排序要比这个复杂。 注意 理解起来就是，把取值范围内的每个数看成一个”桶”，输入的数放在与它对应的”桶”里，在按顺序遍历这些”桶”，一次将桶清理干净 时间复杂度：O(M+N)，但十分浪费空间！ 当前的简化版不是一个真正意义上的排序算法，它仅仅排序了分数，但是这分数是谁的最后全乱了！！ 冒泡排序基本思想每次比较两个相邻元素，如果顺序错误，就交换。 例：题目：12，35，99，18，76从大到小排？ 排列过程： 12==35==99==18==76（1，2位比较） 35==12==99==18==76（2，3位比较） 35==99==12==18==76（3，4位比较） 35==99==18==12==76（4，5位比较） 35==99==18==76==12（第一趟比较完~） 直至第4趟，是比较第1个与第2个数，完成后就剩第1个数，也就只能放在第1位了~~ 总结： 有n个数进行排序，需进行n-1趟操作 每一趟从第1位开始，进行相邻两数比较，比较完成后向后挪移为继续比较 重复上1步骤，直至最后一个尚未归为的数 已经归位的数无需再比较~~ 代码实现：123456789101112131415161718192021222324#include&lt;iostream&gt;using namespace std;int main()&#123; int a[100],i,j,t,n; cin&gt;&gt;n; for(i=0;i&lt;n;i++)&#123; cin&gt;&gt;a[i]; &#125; //核心部分： for(i=0;i&lt;n-1;i++)&#123;//n个数排序，进行n-1趟！！ for(j=0;j&lt;n-i-1;j++)&#123;//从第一位数开始，直到最后一个尚未归位的数 if(a[j] &lt; a[j+1])&#123;//从大到小~~ t=a[j];a[j]=a[j+1];a[j+1]=t; &#125; &#125; &#125; for(i=0;i&lt;n;i++)&#123; printf("%d ",a[i]); &#125; return 0;&#125; 注意 核心：双重嵌套循环~ 时间复杂度：O(N2),复杂度非常高 快速排序优点快速排序解决了桶排序浪费空间和冒泡排序浪费时间的问题， 原理 在需要排序的数中找一个数为基准数（一般以第一个数位基准数），目标是通过移动数列中的其他数，将这个基准数，置于序列中间的某个位置，使左边的数比它小，右边的数比他大（如果是从小到大排），不断更新基准数，多轮重复，直到所有的数都归位为止。 他是基于”二分”的思想，每次交换都是跳跃式的，不会像冒泡一样只在相邻的数之间交换，交换的距离大了，交换的次数小了，速度就高了。 注意他的最差时间复杂度与冒泡一样为O(N2)，而平均时间复杂度为O(NlogN)。 例：题目：将 6，1，2，7，9，3，4，5，10，8 从小到大排列？ 方法： 设i，j为哨兵，分别从两端进行探测，先从右往左(j–)找一个小于6的数，再从左往右(i++)找一个大于6的数，然后交换数值。每次都是j先出发，直到i与j相遇，将基准数与相遇位置的数进行对调。这时”第一轮探测”结束。 当前以6位分界点分成了两个序列，左边为：3，1，2，5，4，右边为：9，7，10，8。这时按照之前的方法先处理左边的，直到左边全排好了，也就是成了1，2，3，4，5，再去管右边。 再次注意：每次都是”j哨兵”先动，原因是：最后和基准数交换的是比它小的，而j的职责就是找比基准数小的数，最后由i去碰j,或者是j最后碰到i了，此时的i还停留在上一次运行，所以他脚底下的数是经过上一次交换过来的比基准数小的数。 过程图解： 代码：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657#include&lt;iostream&gt;using namespace std;int a[101],n;void quicksort(int left,int right)&#123; int i,j,t,temp; if(left &gt; right)&#123;//递归结束条件 return ; &#125; temp=a[left];//temp中存的是基准数 i=left; j=right; while(i != j)&#123; //顺序很重要！！先从右往左！！ while(a[j]&gt;=temp &amp;&amp; i&lt;j)&#123; j--; &#125; //再从左往右 while(a[i]&lt;=temp &amp;&amp; i&lt;j)&#123; i++; &#125; //交换两个数位置 if(i&lt;j)&#123;//确定当i，j没有碰面！ t=a[i];a[i]=a[j];a[j]=t; &#125; &#125; //最终将基准数归位！！ a[left]=a[i]; a[i]=temp; quicksort(left,j-1);//继续处理左边的，递归 quicksort(i+1,right);//继续处理右边的，递归&#125;int main()&#123; int i,j,t; cin&gt;&gt;n; for(i=1;i&lt;=n;i++)&#123; cin&gt;&gt;a[i]; &#125; quicksort(1,n);//快速排序调用！ for(i=1;i&lt;=n;i++)&#123; printf("%d ",a[i]); &#125; return 0;&#125;/* 测试数据：106 1 2 7 9 3 4 5 10 8*/]]></content>
@@ -22,10 +34,5 @@
       <tags>
         <tag>Hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F07%2F17%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
